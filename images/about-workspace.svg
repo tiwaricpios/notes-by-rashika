@@ -1,0 +1,90 @@
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="rough1" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045 0.06" numOctaves="2" seed="5" result="n1"/>
+      <feDisplacementMap in="SourceGraphic" in2="n1" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFCF5"/>
+      <stop offset="1" stop-color="#FFF3E3"/>
+    </linearGradient>
+    <style>.hand{font-family:'Comic Sans MS','Segoe Print','Bradley Hand',cursive,sans-serif;}</style>
+  </defs>
+
+  <rect x="14" y="18" width="572" height="464" rx="26" fill="#000000" opacity="0.14" filter="url(#softShadow)"/>
+  <rect x="6" y="6" width="588" height="476" rx="26" fill="url(#bgGrad)"/>
+  <rect x="6.5" y="6.5" width="587" height="475" rx="26" fill="none" stroke="#EADFC8" stroke-width="1.4"/>
+
+  <!-- spiral binder strip -->
+  <rect x="6" y="6" width="36" height="476" rx="26" fill="#EFE9DA"/>
+  <g fill="#ffffff" stroke="#B9B0A0" stroke-width="1.6">
+    <circle cx="24" cy="34" r="7"/><circle cx="24" cy="74" r="7"/><circle cx="24" cy="114" r="7"/>
+    <circle cx="24" cy="154" r="7"/><circle cx="24" cy="194" r="7"/><circle cx="24" cy="234" r="7"/>
+    <circle cx="24" cy="274" r="7"/><circle cx="24" cy="314" r="7"/><circle cx="24" cy="354" r="7"/>
+    <circle cx="24" cy="394" r="7"/><circle cx="24" cy="434" r="7"/><circle cx="24" cy="464" r="7"/>
+  </g>
+
+  <!-- tape -->
+  <rect x="250" y="-2" width="60" height="20" rx="2" fill="#A78BFA" opacity="0.5" transform="rotate(-8 280 8)"/>
+
+  <!-- badge -->
+  <rect x="66" y="34" width="170" height="28" rx="14" fill="#EDE6FB"/>
+  <text x="151" y="53" text-anchor="middle" class="hand" font-size="14" font-weight="700" fill="#6D28D9">About Rashika</text>
+
+  <!-- title -->
+  <text x="66" y="104" class="hand" font-size="30" font-weight="700" fill="#1E1B4B">My Odoo Workspace</text>
+  <path d="M66 114 Q 160 122 254 114 T 430 114" fill="none" stroke="#F472B6" stroke-width="3" stroke-linecap="round" filter="url(#rough1)"/>
+
+  <!-- laptop -->
+  <g filter="url(#rough1)">
+    <rect x="80" y="180" width="190" height="120" rx="10" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+    <rect x="92" y="192" width="166" height="84" rx="4" fill="#1E1B4B"/>
+    <text x="105" y="220" font-family="monospace" font-size="13" fill="#34D399">&lt;Odoo/&gt;</text>
+    <text x="105" y="240" font-family="monospace" font-size="11" fill="#FACC15">def deploy():</text>
+    <text x="118" y="256" font-family="monospace" font-size="11" fill="#F472B6">return live</text>
+    <rect x="65" y="298" width="220" height="12" rx="6" fill="#CBD5E1"/>
+  </g>
+
+  <!-- open notebook -->
+  <g filter="url(#rough1)">
+    <path d="M320 190 L400 178 L400 300 L320 312 Z" fill="#ECFDF5" stroke="#34D399" stroke-width="2"/>
+    <path d="M480 190 L400 178 L400 300 L480 312 Z" fill="#FDF2F8" stroke="#F472B6" stroke-width="2"/>
+    <text x="332" y="215" class="hand" font-size="11" fill="#047857">✓ Models</text>
+    <text x="332" y="235" class="hand" font-size="11" fill="#047857">✓ Views</text>
+    <text x="332" y="255" class="hand" font-size="11" fill="#047857">✓ Security</text>
+    <text x="412" y="215" class="hand" font-size="11" fill="#BE185D">✓ Process</text>
+    <text x="412" y="235" class="hand" font-size="11" fill="#BE185D">✓ Templates</text>
+    <text x="412" y="255" class="hand" font-size="11" fill="#BE185D">✓ Support</text>
+  </g>
+
+  <!-- coffee cup -->
+  <g filter="url(#rough1)" transform="translate(495,210)">
+    <path d="M0 20 h46 l-6 40 a8 8 0 0 1 -8 7 h-24 a8 8 0 0 1 -8 -7 Z" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <path d="M46 26 q14 0 14 14 q0 14 -14 12" fill="none" stroke="#FB923C" stroke-width="2"/>
+    <path d="M10 12 q3 -8 0 -14 M22 12 q3 -8 0 -14 M34 12 q3 -8 0 -14" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- ribbon badge -->
+  <g transform="translate(66,340)" filter="url(#rough1)">
+    <rect x="0" y="0" width="290" height="50" rx="14" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <text x="16" y="22" class="hand" font-size="13" font-weight="700" fill="#C2410C">⭐ Official Odoo Partner</text>
+    <text x="16" y="40" class="hand" font-size="11" fill="#64748B">HMRC Industry Pvt Ltd</text>
+  </g>
+
+  <g transform="translate(366,340)" filter="url(#rough1)">
+    <rect x="0" y="0" width="200" height="50" rx="14" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+    <text x="16" y="22" class="hand" font-size="13" font-weight="700" fill="#1D4ED8">📚 180+ Days</text>
+    <text x="16" y="40" class="hand" font-size="11" fill="#64748B">Of Handwritten Notes</text>
+  </g>
+
+  <!-- pencil doodle bottom -->
+  <g transform="translate(66,420) rotate(-6)">
+    <rect x="0" y="0" width="120" height="10" rx="5" fill="#FDE68A" stroke="#1E1B4B" stroke-width="1.4"/>
+    <path d="M120 0 L132 5 L120 10 Z" fill="#1E1B4B"/>
+    <rect x="-8" y="0" width="8" height="10" fill="#F472B6"/>
+  </g>
+  <text x="220" y="430" class="hand" font-size="12" fill="#64748B">Notes written from real project experience ✍️</text>
+</svg>

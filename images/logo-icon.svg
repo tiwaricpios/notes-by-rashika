@@ -1,0 +1,14 @@
+<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- open notebook -->
+    <path d="M9 14 L24 11 L24 38 L9 41 Z"/>
+    <path d="M39 14 L24 11 L24 38 L39 41 Z"/>
+    <path d="M13 18 L20 16.5 M13 23 L20 21.5 M13 28 L20 26.5"/>
+    <path d="M28 16.5 L35 18 M28 21.5 L35 23 M28 26.5 L35 28"/>
+  </g>
+  <!-- pen -->
+  <g transform="rotate(40 36 14)">
+    <rect x="34" y="4" width="4.2" height="20" rx="2" fill="#FDE68A"/>
+    <path d="M34 4 L38.2 4 L36.1 0.5 Z" fill="#ffffff"/>
+  </g>
+</svg>
